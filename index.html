@@ -1,46 +1,93 @@
 
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <!--Title-->
+  <title>de-wit startpage</title>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>de-wit startpage</title>
+  <!--Theme-Color-->
+  <meta name="theme-color" content="#510e10">
+  <!--Metadate-->
+  <meta property="og:title" content="de-wit startpage" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://elin.de-wit.dev/" />
+  <meta property="og:image" content="https://elin.de-wit.dev/img/paralax-static.webp" />
+  <meta property="og:description" content="Hello there! My name is Torben de Wit, aka Elin de Wit!" />
+  <!--Twitter-->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="de-wit startpage">
+  <meta name="twitter:image" content="https://elin.de-wit.dev/img/paralax-static.webp">
+  <meta name="twitter:description" content="Hello there! My name is Torben de Wit, aka Elin de Wit!">
+  <link rel="canonical" href="https://elin.de-wit.dev/">
+  <!--CSS-Files-->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <!--JS-Files-->
   <script defer data-domain="elin.de-wit.dev" src="https://analytics.de-wit.dev/js/plausible.js"></script>
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="bootstrap.min.css">
-  <script src="index.js"></script>
-  <script defer data-domain="elin.de-wit.dev" src="https://analytics.de-wit.dev/js/plausible.js"></script>
+  <script src="js/index.js"></script>
 </head>
 <body>
-  <div id='hero'>
-    <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
-    <div class='layer-1 layer' data-depth='0.30' data-type='parallax'></div>
-    <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
-    <div class='layer-3 layer' data-depth='1.0' data-type='parallax'></div>
-    <div class='layer-4 layer' data-depth='0.80' data-type='parallax'></div>
-  </div>
-  <div id='hero-mobile'></div>
-  <div id='content'>
-    <div class='container'>
-      <section class='first-section'>
+
+  <div data-depth="0" class="topnav">
+    <a class="active" href="#">Home</a>
+    <a href="#Projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div> 
+
+<div id='hero'>
+  <div class='layer-bg layer' data-depth='0.10' data-type='parallax'></div>
+  <div class='layer-1 layer' data-depth='0.30' data-type='parallax'></div>
+  <div class='layer-2 layer' data-depth='0.50' data-type='parallax'></div>
+  <div class='layer-3 layer' data-depth='1.0' data-type='parallax'></div>
+  <div class='layer-4 layer' data-depth='0.80' data-type='parallax'></div>
+  <div id='starttitle' data-depth="1.0" data-type="parallax">Welcome</div>
+</div>
+<div class='hero-mobile'></div>
+
+<div id='content'>
+  <div class='container'>
+    <section class='first-section'>
+      <div class='row'>
+        <div class='col-sm-6'>
+          <h1>I'm Elin de Wit</h1>
+          <h2 id="about">about me:</h2>
+        </div>
+      </div>
         <div class='row'>
           <div class='col-sm-6'>
-            <h1>hello there! My name is Torben de Wit, aka Elin de Wit!</h1>
+            <p id="start">I am a young and enthusiastic developer that is studying IT application development at Benedict.</p>
+            <p>Developing software has always been my dream. I enjoy making programms and being creative with it. Like this website I am working on is one of my bigger projects. I enjoy programming in my free time when I get to be creative. Like I love drawing and making art in general, not everything I make is perfect but I do enjoy making things. Combining my art with code gives me joy. I mean look at this website. the drawing in the backround I made myself and gotten it to parallax scrole by adding simple java script code to it and some CSS to it.</p>
+            <p></p>
+
+          </div>
+          <div class='col-sm-6'> 
+            <p>Describing who i am isn't easy. Since i don't like to talk about myself. But here is some infos you should need to know.</p>
+            <p>I am transgender meaning i am currently transitioning from male to female, I want people to know that this is something i really want to do and something that really plays a big role in my life i will always push my hardest to reach my transition goals through hard and harder. While staying focused on my work.</p>
+            <p></p>
           </div>
         </div>
-        <div class='row'>
-          <div class='col-sm-6'>
-            <p id="start">I am a young and enthusiastic developer that is studying IT apllication development at Benedict.</p>
-            <p>This is my portfolio website here you'll see some of my projects and what i am working on, this is still a work in progress so stay updated for more news!</p>
-            <p>I might need to talk more about me. I am 18 and I have always wanted to do coding and be creative in my own way. As you can see with this website here, I love drawing and making art, and combining that with some cool but simple code :D</p>
-            <p>I am currently working on a music streaming app. That will function simulary to your ordinary spotify or Youtube Music streaming services, but these just have their own twist more about that later</p>
-          </div>
-          <div class='col-sm-6'>
-            <p>At first they are overawing; their calm self-collectedness of simplicity seems a Socratic wisdom. I had noticed also that Queequeg never consorted at all, or but very little, with the other seamen in the inn. He made no advances whatever; appeared to have no desire to enlarge the circle of his acquaintances. All this struck me as mighty singular; yet, upon second thoughts, there was something almost sublime in it. Here was a man some twenty thousand miles from home, by the way of Cape Horn, that is—which was the only way he could get there—thrown among people as strange to him as though he were in the planet Jupiter; and yet he seemed entirely at his ease; preserving the utmost serenity; content with his own companionship; always equal to himself.</p>
-            <p>Here was a man some twenty thousand miles from home, by the way of Cape Horn, that is—which was the only way he could get there—thrown among people as strange to him as though he were in the planet Jupiter; and yet he seemed entirely at his ease; preserving the utmost serenity; content with his own companionship; always equal to himself. Surely this was a touch of fine philosophy; though no doubt he had never heard there was such a thing as that.</p>
-            </a>
-          </div>
+        <h1 id="contact">contact me:</h1>
+        <div class="container">
+          <form action="mailto:elin@de-wit.dev">
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            <br>
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            <br>
+            <label for="lname">country</label>
+            <input type="text" id="country" name="country" placeholder="where are you from..">
+            <br> 
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="your message.."></textarea>
+            <br>
+            <input type="submit" name="submit" id="submit" value="send!">
+          </form>
         </div>
       </section>
     </div>
