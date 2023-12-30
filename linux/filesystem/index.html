@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Filesystem | Linux</title>
+	<meta charset="UTF-8" />
+	<meta content="Divi v.4.18.0" name="generator" />
+	<meta name="generator" content="WordPress 6.0.1" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='robots' content='noindex, nofollow' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css' media='all' />
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel="stylesheet" href="../../cms/css/filesystem.main.css">
+	<link rel='stylesheet' id='wp-block-library-css' href='../../cms/css/style.min.css' type='text/css' media='all' />
+	<link rel='stylesheet' id='et_monarch-css-css' href='../../cms/css/style.css' type='text/css' media='all' />
+	<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="../../cms/css/et-divi-customizer-global.min.css" />
+	<link rel="https://api.w.org/" href="../../cms/files/linux.json" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../cms/files/wlwmanifest.xml" />
+	<link rel="icon" href="https://cdn.de-wit.dev/img/dewit/linux/favicon.ico" sizes="32x32" />
+	<link rel="canonical" href="https://linux.wigger.one/filesystem/" />
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+	<script type="text/javascript">
+		let jqueryParams = [], jQuery = function (r) { return jqueryParams = [...jqueryParams, r], jQuery }, $ = function (r) { return jqueryParams = [...jqueryParams, r], $ }; window.jQuery = jQuery, window.$ = jQuery; let customHeadScripts = !1; jQuery.fn = jQuery.prototype = {}, $.fn = jQuery.prototype = {}, jQuery.noConflict = function (r) { if (window.jQuery) return jQuery = window.jQuery, $ = window.jQuery, customHeadScripts = !0, jQuery.noConflict }, jQuery.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.ready = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.load = function (r) { jqueryParams = [...jqueryParams, r] }, $.load = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] };
+	</script>
+  	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9071574f142344b6a179cf3f2f7de8b5"}'></script>
+</head>
+
+<body class="post-template-default single single-post postid-1912 single-format-standard et-tb-has-template et-tb-has-header et_bloom et_monarch et_pb_button_helper_class et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_smooth_scroll et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0.49803921568627" />
+					<feFuncG type="table" tableValues="0 0.49803921568627" />
+					<feFuncB type="table" tableValues="0 0.49803921568627" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix"
+					values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 0.27843137254902" />
+					<feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0" />
+					<feFuncG type="table" tableValues="0 0.64705882352941" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.78039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.94901960784314" />
+					<feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.44705882352941 0.4" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false" style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.098039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.66274509803922" />
+					<feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<div id="page-container">
+		<div id="et-boc" class="et-boc">
+			<header class="et-l et-l--header">
+				<div class="et_builder_inner_content et_pb_gutters3">
+					<div class="et_pb_section et_pb_section_0_tb_header et_pb_fullwidth_section et_section_regular et_pb_section--with-menu">
+						<div class="et_pb_module et_pb_fullwidth_menu et_pb_fullwidth_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_left et_dropdown_animation_fade et_pb_fullwidth_menu--without-logo et_pb_fullwidth_menu--style-left_aligned">
+							<div class="et_pb_row clearfix">
+								<div class="et_pb_menu__wrap">
+									<div class="et_pb_menu__menu">
+										<nav class="et-menu-nav fullwidth-menu-nav">
+											<ul id="menu-menu" class="et-menu fullwidth-menu nav et_disable_top_tier">
+												<li class="et_pb_menu_page_id-1938 menu-item menu-item-type-custom menu-item-object-custom menu-item-1938">
+													<a href="/linux/">Home</a>
+												</li>
+												<li class="et_pb_menu_page_id-1939 menu-item menu-item-type-post_type menu-item-object-post menu-item-1945">
+													<a href="/linux/commands/">Commands</a>
+												</li>
+												<li class="et_pb_menu_page_id-1912 menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-1915">
+													<a href="/linux/filesystem/" aria-current="page">Filesystem</a>
+												</li>
+												<li class="et_pb_menu_page_id-1898 menu-item menu-item-type-post_type menu-item-object-post menu-item-1905">
+													<a href="/linux/kernel/">Kernel</a>
+												</li>
+												<li class="et_pb_menu_page_id-1848 menu-item menu-item-type-post_type menu-item-object-post menu-item-1851">
+													<a href="/linux/distributions/">Distributions</a>
+												</li>
+												<li class="et_pb_menu_page_id-1750 menu-item menu-item-type-post_type menu-item-object-post menu-item-1753">
+													<a href="/linux/directories/">Directories</a>
+												</li>
+												<li class="et_pb_menu_page_id-1806 menu-item menu-item-type-post_type menu-item-object-post menu-item-1820">
+													<a href="/linux/root/">Root</a>
+												</li>
+											</ul>
+										</nav>
+									</div>
+									<div class="et_mobile_nav_menu">
+										<div class="mobile_nav closed">
+											<span class="mobile_menu_bar"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="et_pb_section et_pb_section_1_tb_header et_animated et_pb_section_parallax et_pb_with_background et_section_regular">
+						<span class="et_parallax_bg_wrap"><span class="et_parallax_bg" style="background-image: url(https://cdn.de-wit.dev/cdn-cgi/imagedelivery/XDj7cDl__E4rikVU7dwKwQ/b1605001-4386-4fa7-5871-9b6a4ce00700/original);"></span></span>
+						<div class="et_pb_row et_pb_row_0_tb_header">
+							<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+								<div class="et_pb_module et_pb_text et_pb_text_0_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+									<div class="et_pb_text_inner">
+										<h1>Filesystem</h1>
+										<p>&nbsp;</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="et_pb_section et_pb_section_2_tb_header et_pb_with_background et_section_regular">
+						<div class="et_pb_row et_pb_row_1_tb_header et_pb_gutters2">
+							<div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+							</div>
+							<div class="et_pb_column et_pb_column_2_3 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+								<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_left et_pb_bg_layout_light">
+									<div class="et_pb_text_inner">
+										<h3>Information about the Filesystem</h3>
+										<p><strong>How does the Filesystem work?</strong><br />It starts at &#8220;/&#8220;. Every Folder is another layer in the Filesystem</p>
+										<p>example:<br>/home/user</p>
+										<p><strong>Mounting a Drive</strong><br /></p>
+										<p>You just simply mount a Drive in a path of the System. This path can be anywhere but it&#8217;s recommended to mount at /mnt.</p>
+										<p>example:<br />/mnt/drive1</p>
+										<p><strong>Drive naming scheme in Linux</strong></p>
+										<p>sda &#8211; 1st Drive<br />sdb &#8211; 2nd Drive<br />sda1 &#8211; 1st Drive/1st Parition<br />sdc4 &#8211; 3nd Drive/4th Parition<br /></p>
+										<br>
+										<h3><strong>The most popular file systems in Linux</strong></h3>
+									</div>
+								</div>
+								<div class="et_pb_module et_pb_accordion et_pb_accordion_0_tb_header">
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_0_tb_header  et_pb_toggle_open">
+										<h3 class="et_pb_toggle_title">ext4</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p style="text-align: justify;">
+												Ext4 was introduced in 2008 as a successor to ext3. The file system is currently standard on many Linux systems like Ubuntu. The most-fac-reaching innovation was the extents feature which optimizes the management of large files and prevents fragmentation more efficiently than its predecessors. Under ext4, partitions can be enlarged and reduced also during the operation. The maximum file system size was limited to 32 TB with ext3. The limit with ext4 is one exabyte ( one million TB)
+											</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_1_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">exFAT</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p style="text-align: justify;">
+												The format from 2006 is a further development of the classic FAT formatting. exFAT was originally designed for removable media and is therefore particularly suitable for USB sticks, memory cards and external hard disks. It works especially effective with rather smaller data storage devices. Nevertheless, it can also handle large files and far exceed the FAT limit of 4 GB.
+											</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">FAT32</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p style="text-align: justify;">
+												The file system has existed since 1980. The variants released since then are known as FAT12, FAT16 and FAT32. FAT formatting is ideal for managing and exchanging small amounts of data. From today’s point of view, the FAT is obsolete because even in the current most powerful variant (FAT32 from 1997). Files can have a maximum size of 4 GB. Moreover, the maximum partition size is limited to 8 TB.
+											</p>
+											<p style="text-align: justify;">
+												Despite these limitations, FAT formatting is still widely used. The main reason is that every OS can handle FAT32.
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var et_animation_data = [{ "class": "et_pb_section_1_tb_header", "style": "zoomBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "8%", "starting_opacity": "100%", "speed_curve": "ease-in-out" }];
+	</script>
+	<script type='text/javascript' id='jquery-js-after'>
+		jqueryParams.length && $.each(jqueryParams, function (e, r) { if ("function" == typeof r) { var n = String(r); n.replace("$", "jQuery"); var a = new Function("return " + n)(); $(document).ready(a) } });
+	</script>
+	<script type='text/javascript' id='et_monarch-custom-js-js-extra'>
+		/* <![CDATA[ */
+		var monarchSettings = { "ajaxurl": "https:\/\/linux.wigger.one\/wp-admin\/admin-ajax.php", "pageurl": "https:\/\/linux.wigger.one\/filesystem\/", "stats_nonce": "407c9f0efa", "share_counts": "8d7d08daef", "follow_counts": "ce1c674d15", "total_counts": "16487743a1", "media_single": "b4f61915f2", "media_total": "27d0668633", "generate_all_window_nonce": "9ba086844c", "no_img_message": "No images available for sharing on this page" };
+		/* ]]> */
+	</script>
+	<script type='text/javascript' id='divi-custom-script-js-extra'>
+		/* <![CDATA[ */
+		var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
+		var et_builder_utils_params = { "condition": { "diviTheme": true, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
+		var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+		var et_pb_custom = { "ajaxurl": "https:\/\/linux.wigger.one\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/linux.wigger.one\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/linux.wigger.one\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "b204a38fde", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "3b6b968799", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "1912", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "https:\/\/linux.wigger.one\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": [] };
+		var et_pb_box_shadow_elements = [];
+		/* ]]> */
+	</script>
+	<script type='text/javascript' src='../../cms/js/jquery.min.js' id='jquery-core-js'></script>
+	<script type='text/javascript' src='../../cms/js/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+	<script type='text/javascript' src='../../cms/js/idle-timer.min.js' id='et_monarch-idle-js'></script>
+	<script type='text/javascript' src='../../cms/js/custom.js' id='et_monarch-custom-js-js'></script>
+	<script type='text/javascript' src='../../cms/js/scripts.min.js' id='divi-custom-script-js'></script>
+	<script type='text/javascript' src='../../cms/js/smoothscroll.js' id='smoothscroll-js'></script>
+	<script type='text/javascript' src='../../cms/js/jquery.fitvids.js' id='fitvids-js'></script>
+	<script type='text/javascript' src='../../cms/js/common.js' id='et-core-common-js'></script>
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+</body>
+
+</html>
