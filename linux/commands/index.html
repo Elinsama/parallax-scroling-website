@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<title>Commands | Linux</title>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name='robots' content='noindex, nofollow' />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="generator" content="WordPress 6.0.1" />
+	<meta content="Divi v.4.18.0" name="generator" />
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+	<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+	<link rel='stylesheet' id='et-gf-open-sans-css' href='https://fonts.googleapis.com/css?family=Open+Sans' type='text/css' media='all' />
+	<link rel="stylesheet" id="et-divi-customizer-global-cached-inline-styles" href="../../cms/css/et-divi-customizer-global.min.css" />
+	<link rel='preload' id='divi-dynamic-css' href='../../cms/css/et-divi-dynamic-tb-111.css' as='style' media='all' onload="this.onload=null;this.rel='stylesheet'" />
+	<link rel='stylesheet' id='et_monarch-css-css' href='../../cms/css/style.css' type='text/css' media='all' />
+	<link rel="stylesheet" href="../../cms/css/commands.main.css">
+	<link rel="https://api.w.org/" href="../../cms/files/linux.json" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="../../cms/files/wlwmanifest.xml" />
+	<link rel="icon" href="https://cdn.de-wit.dev/img/dewit/linux/favicon.ico" sizes="32x32">
+	<link rel="canonical" href="https://linux.wigger.one/commands/" />
+	<script type="text/javascript">
+		let jqueryParams = [], jQuery = function (r) { return jqueryParams = [...jqueryParams, r], jQuery }, $ = function (r) { return jqueryParams = [...jqueryParams, r], $ }; window.jQuery = jQuery, window.$ = jQuery; let customHeadScripts = !1; jQuery.fn = jQuery.prototype = {}, $.fn = jQuery.prototype = {}, jQuery.noConflict = function (r) { if (window.jQuery) return jQuery = window.jQuery, $ = window.jQuery, customHeadScripts = !0, jQuery.noConflict }, jQuery.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.ready = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.load = function (r) { jqueryParams = [...jqueryParams, r] }, $.load = function (r) { jqueryParams = [...jqueryParams, r] }, jQuery.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] }, $.fn.ready = function (r) { jqueryParams = [...jqueryParams, r] };
+	</script>
+	<script type="text/javascript">
+		document.documentElement.className = 'js';
+	</script>
+  	<script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "9071574f142344b6a179cf3f2f7de8b5"}'></script>
+</head>
+
+<body class="post-template-default single single-post postid-1939 single-format-standard et-tb-has-template et-tb-has-header et_bloom et_monarch et_pb_button_helper_class et_pb_footer_columns4 et_cover_background et_pb_gutter windows et_pb_gutters3 et_pb_pagebuilder_layout et_smooth_scroll et_right_sidebar et_divi_theme et-db">
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-dark-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0.49803921568627" />
+					<feFuncG type="table" tableValues="0 0.49803921568627" />
+					<feFuncB type="table" tableValues="0 0.49803921568627" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-grayscale">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.54901960784314 0.98823529411765" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.71764705882353 0.25490196078431" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-red">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 1" />
+					<feFuncG type="table" tableValues="0 0.27843137254902" />
+					<feFuncB type="table" tableValues="0.5921568627451 0.27843137254902" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-midnight">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0 0" />
+					<feFuncG type="table" tableValues="0 0.64705882352941" />
+					<feFuncB type="table" tableValues="0 1" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-magenta-yellow">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.78039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.94901960784314" />
+					<feFuncB type="table" tableValues="0.35294117647059 0.47058823529412" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-purple-green">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.65098039215686 0.40392156862745" />
+					<feFuncG type="table" tableValues="0 1" />
+					<feFuncB type="table" tableValues="0.44705882352941 0.4" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 0 0" width="0" height="0" focusable="false"  style="visibility: hidden; position: absolute; left: -9999px; overflow: hidden;">
+		<defs>
+			<filter id="wp-duotone-blue-orange">
+				<feColorMatrix color-interpolation-filters="sRGB" type="matrix" values=" .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 .299 .587 .114 0 0 " />
+				<feComponentTransfer color-interpolation-filters="sRGB">
+					<feFuncR type="table" tableValues="0.098039215686275 1" />
+					<feFuncG type="table" tableValues="0 0.66274509803922" />
+					<feFuncB type="table" tableValues="0.84705882352941 0.41960784313725" />
+					<feFuncA type="table" tableValues="1 1" />
+				</feComponentTransfer>
+				<feComposite in2="SourceGraphic" operator="in" />
+			</filter>
+		</defs>
+	</svg>
+	<div id="page-container">
+		<div id="et-boc" class="et-boc">
+			<header class="et-l et-l--header">
+				<div class="et_builder_inner_content et_pb_gutters3">
+					<div class="et_pb_section et_pb_section_0_tb_header et_pb_fullwidth_section et_section_regular et_pb_section--with-menu">
+						<div class="et_pb_module et_pb_fullwidth_menu et_pb_fullwidth_menu_0_tb_header et_pb_bg_layout_light  et_pb_text_align_left et_dropdown_animation_fade et_pb_fullwidth_menu--without-logo et_pb_fullwidth_menu--style-left_aligned">
+							<div class="et_pb_row clearfix">
+								<div class="et_pb_menu__wrap">
+									<div class="et_pb_menu__menu">
+										<nav class="et-menu-nav fullwidth-menu-nav">
+											<ul id="menu-menu" class="et-menu fullwidth-menu nav et_disable_top_tier">
+												<li class="et_pb_menu_page_id-1938 menu-item menu-item-type-custom menu-item-object-custom menu-item-1938">
+													<a href="/linux/">Home</a></li>
+												<li class="et_pb_menu_page_id-1939 menu-item menu-item-type-post_type menu-item-object-post current-menu-item menu-item-1945">
+													<a href="/linux/commands/"
+														aria-current="page">Commands</a></li>
+												<li class="et_pb_menu_page_id-1912 menu-item menu-item-type-post_type menu-item-object-post menu-item-1915">
+													<a href="/linux/filesystem/">Filesystem</a></li>
+												<li
+													class="et_pb_menu_page_id-1898 menu-item menu-item-type-post_type menu-item-object-post menu-item-1905">
+													<a href="/linux/kernel/">Kernel</a></li>
+												<li
+													class="et_pb_menu_page_id-1848 menu-item menu-item-type-post_type menu-item-object-post menu-item-1851">
+													<a href="/linux/distributions/">Distributions</a>
+												</li>
+												<li
+													class="et_pb_menu_page_id-1750 menu-item menu-item-type-post_type menu-item-object-post menu-item-1753">
+													<a href="/linux/directories/">Directories</a></li>
+												<li
+													class="et_pb_menu_page_id-1806 menu-item menu-item-type-post_type menu-item-object-post menu-item-1820">
+													<a href="/linux/root/">Root</a></li>
+											</ul>
+										</nav>
+									</div>
+									<div class="et_mobile_nav_menu">
+										<div class="mobile_nav closed">
+											<span class="mobile_menu_bar"></span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="et_pb_section et_pb_section_1_tb_header et_animated et_pb_section_parallax et_pb_with_background et_section_regular">
+						<span class="et_parallax_bg_wrap"><span class="et_parallax_bg" style="background-image: url(https://cdn.de-wit.dev/cdn-cgi/imagedelivery/XDj7cDl__E4rikVU7dwKwQ/b1605001-4386-4fa7-5871-9b6a4ce00700/original);"></span></span>
+						<div class="et_pb_row et_pb_row_0_tb_header">
+							<div class="et_pb_column et_pb_column_4_4 et_pb_column_0_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+								<div class="et_pb_module et_pb_text et_pb_text_0_tb_header  et_pb_text_align_center et_pb_bg_layout_dark">
+									<div class="et_pb_text_inner">
+										<h1>Commands</h1>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="et_pb_section et_pb_section_2_tb_header et_pb_with_background et_section_regular">
+						<div class="et_pb_row et_pb_row_1_tb_header">
+							<div class="et_pb_column et_pb_column_1_3 et_pb_column_1_tb_header  et_pb_css_mix_blend_mode_passthrough et_pb_column_empty">
+							</div>
+							<div class="et_pb_column et_pb_column_2_3 et_pb_column_2_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+								<div class="et_pb_module et_pb_text et_pb_text_1_tb_header  et_pb_text_align_left et_pb_bg_layout_light">
+									<div class="et_pb_text_inner">
+										<h2>Why use the command line?</h2>
+										<p>
+											To use Linux most efficiently, you should use the command line. Anyone who masters it can work more efficiently and gain a lot of control over the system. Here we give you a brief overview. If you need further help visit Stackoverflow or Ubuntuusers.
+										</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="et_pb_row et_pb_row_2_tb_header">
+							<div class="et_pb_column et_pb_column_4_4 et_pb_column_3_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+								<div class="et_pb_module et_pb_image et_pb_image_0_tb_header">
+									<span class="et_pb_image_wrap ">
+										<img loading="lazy" width="1008" height="533" src="https://cdn.de-wit.dev/cdn-cgi/imagedelivery/XDj7cDl__E4rikVU7dwKwQ/48bc21a8-7d2b-465c-f3a0-26aa036c9d00/original" alt="" title="cmd-echo"/>
+									</span>
+								</div>
+							</div>
+						</div>
+						<div class="et_pb_row et_pb_row_3_tb_header et_pb_gutters2">
+							<div class="et_pb_column et_pb_column_1_3 et_pb_column_4_tb_header  et_pb_css_mix_blend_mode_passthrough">
+								<div class="et_pb_button_module_wrapper et_pb_button_0_tb_header_wrapper  et_pb_module ">
+									<a class="et_pb_button et_pb_button_0_tb_header et_hover_enabled et_pb_bg_layout_light" href="https://stackoverflow.com">Stackoverflow</a>
+								</div>
+								<div class="et_pb_button_module_wrapper et_pb_button_1_tb_header_wrapper  et_pb_module ">
+									<a class="et_pb_button et_pb_button_1_tb_header et_hover_enabled et_pb_bg_layout_light" href="https://wiki.ubuntuusers.de/Startseite/">Ubuntuusers</a>
+								</div>
+							</div>
+							<div class="et_pb_column et_pb_column_2_3 et_pb_column_5_tb_header  et_pb_css_mix_blend_mode_passthrough et-last-child">
+								<div class="et_pb_module et_pb_accordion et_pb_accordion_0_tb_header">
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_0_tb_header  et_pb_toggle_open">
+										<h3 class="et_pb_toggle_title">ls</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>ls is probably the first command every Linux user types in their terminal. It prints content of the directory you want to show including files and directories.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_1_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">cd</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The cd command is very popular, along with ls. It stands for “change directory” and, as its name suggests, switches you to the directory you’re trying to access. If you want to access Videos you should type “cd Videos/”.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_2_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">cp</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>It&#8217;s so easy to copy files and folders directly in the Linux terminal that sometimes it can replace conventional file managers.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_3_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">rm</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>Now that you know how to copy files, it`ll be helpful to know how to remove them. Rm is used to remove files out of directories. Be careful while using it, though, because it&#8217;s very difficult (yet not impossible) to recover files deleted this way.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_4_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">mv</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>You can use the mv command to move (or rename) files and directories through your file system.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_5_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">mkdir</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>To create folders in the terminal, you will need to use the mkdir command. Just specify the new folder`s name, ensure it doesn&#8217;t exist, and you’re ready to go.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_6_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">chmod</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The chmod lets you change the mode of a file (permissions) quickly. It has a lot of options available with it.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_7_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">apt/yum/dnf/pacman</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>No matter which Linux distribution you’re using, it&#8217;s likely you use package managers to install, update, and remove the software you use every day.<br />You can access these by the terminal through the command line, and you’d use one or another depending on the distro you are running.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_8_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">cat</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>It is short for “concatenate”, which lets you create a view, and concatenate files directly from the terminal. It&#8217;s mainly used to preview a file without opening a graphical text editor like nano or vim.
+											</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_9_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">ping</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>Ping is a simple command, It’s used for Networking; ping has a ton of options but the most common cases are that you use an IP-Address or a Domain-Name to “ping” it.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_10_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">less</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>Less is the opposite of more. It’s a program that lets you inspect files backwards and forwards.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_11_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">more</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>More is the opposite of less, it’s a program that lets you read files.
+											</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_12_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">pwd</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The pwd command stands for “print working directory”, and it outputs the absolute path of the directory you’re in . For example if your username is “user” and you’re in your Documents directory, its absolute path would be: /home/user/Documents.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_13_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">touch</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>With touch you can create a file.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_14_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">sudo</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>This command stands for “superuser do” and it lets you act as a superuser or root user while you’re running a specific command. It&#8217;s how linux protects itself and prevents users from accidentally modifying the machine&#8217;s filesystem or installing inappropriate packages.</p>
+											<p>It is commonly used to install software or to edit files outside the user&#8217;s home directory.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_15_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">htop</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>htop is an interactive process viewer that lets you manage your machine’s resources directly from the terminal. In most cases, it isn’t installed by default, so make sure to read more about it on its download page.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_16_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">unzip</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The unzip command allows you to extract the content of a .zip file from the terminal. Once again, this package may not be installed by default, so install it with your package manager.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_17_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">zip</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The zip command allows you to zip a folder into a .zip file.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_18_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">echo</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The echo command is used to display lines of text/string that are passed as an argument. this is a built in command that is mostly used in shell scripts batch files to output a status text on screen.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_19_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">kill</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>It&#8217;s annoying when a program is unresponsive, and you can’t close it by any means. Fortunately, the kill command solves this kind of problem. it will “kill” any process without hesitation.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_20_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">wget</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>wget (world wide web get) is a utility to download content from the internet. It has one of the largest collections of flags out there.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_21_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">man</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>Another essential Linux command is man. it displays the manual page of any other command (as long as it has one).</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_22_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">shutdown/reboot</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>As you may guess, the shutdown command lets you power off your machine. It also can be used as a reboot command. For this command you need Root permissions!</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_23_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">whoami</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The whoami command displays the username with which you are currently logged in.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_24_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">uname </h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>uname (short for “unix name”) prints the operative system information, which comes in handy when you know your current linux version.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_25_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">history</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>when you are struggling to remember a command you have used before you may use history to see the list of commands you have used in the current terminal.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_26_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">passwd</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>passwd allows you to change the passwords of user accounts. First, it prompts you to enter your current password, then asks you for a new password and confirmation.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_27_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">head</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>This one is complementary to the tail command. head outputs the first 10 lines of a text file, but you can set any number of lines you want to display with the -n flag.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_28_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">tail</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>tail is as said with the command head it displays the lines of the text, this time just the last lines instead of the first.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_29_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title"> grep</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>grep is one of the most powerful utilities for working with text files. it searches for lines that match a regular expression and then it prints them.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_30_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">find</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The find command searches for files in a directory hierarchy based on a regex expression.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_31_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">hostname</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>A computer in the network can be identified by its “hostname”. This command lets you change it.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_32_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">useradd</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>useradd is a command that lets you add a user to your system.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_33_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">userdel</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>userdel is the opposite of useradd; it is used to remove/delete a user.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_34_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">systemctl</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>systemctl is used to utilize and control/manage systemd and services/demon’s. You can see it as a control interface to manage your system’s services.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_35_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">clear</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>clear is a command that clears your terminal for you.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_36_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">date</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The date command is used to display the system date and time.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_37_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">pstree</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>pstree (process tree) is a linux command that shows the running processes as a tree. It is used as a more visual alternative to the ps command.
+											</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_38_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">chown</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The chown command lets you change the ownership of a given file, directory, or symbolic link. Because in linux all files are associated with an owner.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_39_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">diff</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>diff is a command that lets you compare two files line by line. So if you&#8217;d need to compare them. This lets you do that easily.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_40_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">tar</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The tar program stands for tape archiver. It was originally written to back up data on tape drives. Even today it is the most popular tool for archiving data on Linux systems.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_41_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">du</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>du stands for disk usage. It displays the disk usage of the system.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_42_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">df</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>df short for disk free, is used to display information about how much disk space is in use and how much is free.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_43_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">locate</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>The command locate is used to locate the file you are looking for on your system.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_44_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">neofetch</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>neofetch is a command that is not standart, but it shows you a nice graph on what kind of system you are running. Mostly used it’s used to flex your system to other linux users.</p>
+										</div>
+									</div>
+									<div class="et_pb_toggle et_pb_module et_pb_accordion_item et_pb_accordion_item_45_tb_header  et_pb_toggle_close">
+										<h3 class="et_pb_toggle_title">cli-pride-flags</h3>
+										<div class="et_pb_toggle_content clearfix">
+											<p>This command lets you display a pride flag.</p>
+											<p><img class="details-image" src="https://cdn.de-wit.dev/cdn-cgi/imagedelivery/XDj7cDl__E4rikVU7dwKwQ/6c74269b-9714-4438-9657-f8df35298b00/original" draggable="false" alt="" /></p>
+											<p>&nbsp;</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+		</div>
+	</div>
+	<script type="text/javascript">
+		var et_animation_data = [{ "class": "et_pb_section_1_tb_header", "style": "zoomBottom", "repeat": "once", "duration": "1000ms", "delay": "0ms", "intensity": "8%", "starting_opacity": "100%", "speed_curve": "ease-in-out" }];
+	</script>
+	<script type='text/javascript' id='et_monarch-custom-js-js-extra'>
+		/* <![CDATA[ */
+		var monarchSettings = { "ajaxurl": "https:\/\/linux.wigger.one\/wp-admin\/admin-ajax.php", "pageurl": "https:\/\/linux.wigger.one\/commands\/", "stats_nonce": "407c9f0efa", "share_counts": "8d7d08daef", "follow_counts": "ce1c674d15", "total_counts": "16487743a1", "media_single": "b4f61915f2", "media_total": "27d0668633", "generate_all_window_nonce": "9ba086844c", "no_img_message": "No images available for sharing on this page" };
+		/* ]]> */
+	</script>
+	<script type='text/javascript' id='divi-custom-script-js-extra'>
+		/* <![CDATA[ */
+		var DIVI = { "item_count": "%d Item", "items_count": "%d Items" };
+		var et_builder_utils_params = { "condition": { "diviTheme": true, "extraTheme": false }, "scrollLocations": ["app", "top"], "builderScrollLocations": { "desktop": "app", "tablet": "app", "phone": "app" }, "onloadScrollLocation": "app", "builderType": "fe" };
+		var et_frontend_scripts = { "builderCssContainerPrefix": "#et-boc", "builderCssLayoutPrefix": "#et-boc .et-l" };
+		var et_pb_custom = { "ajaxurl": "https:\/\/linux.wigger.one\/wp-admin\/admin-ajax.php", "images_uri": "https:\/\/linux.wigger.one\/wp-content\/themes\/Divi\/images", "builder_images_uri": "https:\/\/linux.wigger.one\/wp-content\/themes\/Divi\/includes\/builder\/images", "et_frontend_nonce": "b204a38fde", "subscription_failed": "Please, check the fields below to make sure you entered the correct information.", "et_ab_log_nonce": "3b6b968799", "fill_message": "Please, fill in the following fields:", "contact_error_message": "Please, fix the following errors:", "invalid": "Invalid email", "captcha": "Captcha", "prev": "Prev", "previous": "Previous", "next": "Next", "wrong_captcha": "You entered the wrong number in captcha.", "wrong_checkbox": "Checkbox", "ignore_waypoints": "no", "is_divi_theme_used": "1", "widget_search_selector": ".widget_search", "ab_tests": [], "is_ab_testing_active": "", "page_id": "1939", "unique_test_id": "", "ab_bounce_rate": "5", "is_cache_plugin_active": "no", "is_shortcode_tracking": "", "tinymce_uri": "https:\/\/linux.wigger.one\/wp-content\/themes\/Divi\/includes\/builder\/frontend-builder\/assets\/vendors", "waypoints_options": [] };
+		var et_pb_box_shadow_elements = [];
+		/* ]]> */
+	</script>
+	<script type='text/javascript' id='jquery-js-after'>
+		jqueryParams.length && $.each(jqueryParams, function (e, r) { if ("function" == typeof r) { var n = String(r); n.replace("$", "jQuery"); var a = new Function("return " + n)(); $(document).ready(a) } });
+	</script>
+	<script type='text/javascript' src='../../cms/js/jquery.min.js' id='jquery-core-js'></script>
+	<script type='text/javascript' src='../../cms/js/jquery-migrate.min.js' id='jquery-migrate-js'></script>
+	<script type='text/javascript' src='../../cms/js/idle-timer.min.js' id='et_monarch-idle-js'></script>
+	<script type='text/javascript' src='../../cms/js/custom.js' id='et_monarch-custom-js-js'></script>
+	<script type='text/javascript' src='../../cms/js/scripts.min.js' id='divi-custom-script-js'></script>
+	<script type='text/javascript' src='../../cms/js/smoothscroll.js' id='smoothscroll-js'></script>
+	<script type='text/javascript' src='../../cms/js/common.js' id='et-core-common-js'></script>
+	<span class="et_pb_scroll_top et-pb-icon"></span>
+</body>
+
+</html>
